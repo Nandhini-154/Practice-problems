@@ -1,0 +1,29 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+  
+     Scanner in = new Scanner(System.in);
+		  String s1=in.nextLine();
+		   String s2=in.nextLine();
+		   in.close();
+		   /*Another way is boolean
+		   boolean r=s1.contains(s2);
+		   if(r)
+		     System.out.println("Yes a substring");
+		   else
+		     System.out,println("No");
+		   */
+		  int r=s1.indexOf(s2);
+		  if(r==-1){
+		      System.out.println("No");
+		  }
+		    else{
+		        System.out.println("Yes");
+		    }
+		   
+		   
+	    
+    }
+}

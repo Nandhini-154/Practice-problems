@@ -1,0 +1,38 @@
+/*Chef opened a company which manufactures cars and bikes. Each car requires 4 tyres while each bike requires 2 tyres. Chef has a total of N tyres (N is even). He wants to manufacture maximum number of cars from these tyres and then manufacture bikes from the remaining tyres.
+
+Chef's friend went to Chef to purchase a bike. If Chef's company has manufactured even a single bike then Chef's friend will be able to purchase it.
+
+Determine whether he will be able to purchase the bike or not.
+
+Input Format
+The first line contains an integer 
+
+T denoting the number of test cases. The 
+
+T test cases then follow.
+The first line of each test case contains an integer 
+
+N denoting the number of tyres.
+Output Format
+For each test case, output YES or NO depending on whether Chef's friend will be able to purchase the bike or not. Output is case insensitive.*/
+
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      //  System.out.println("Hello, World!");
+     Scanner in = new Scanner(System.in);
+		int t=in.nextInt();
+		while(t>0){
+		    int n=in.nextInt();
+		    if(n%4!=0){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		    t--;
+		}
+	    
+    }
+}

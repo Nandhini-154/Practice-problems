@@ -1,0 +1,66 @@
+/*Input
+Output
+4
+6
+abcabc
+6
+abcdef
+4
+aaaa
+4
+baab
+YES
+NO
+YES
+NO
+Explanation:
+Test case 
+1
+1: On breaking, the string S gives A=abc and B=abc. Thus, joining it in either way (AB or BA), would give the same string S.
+
+Test case 
+2
+2: On breaking, the string S gives 
+A=abc and B=def. Joining it as BA would give the string 
+defabc which is not equal to string S.
+
+Test case 
+3
+3: On breaking, the string S gives 
+A=aa and B=aa. Thus, joining it in either way (AB or BA), would give the same string S.
+
+Test case 
+4
+4: On breaking, the string S gives 
+
+A=ba and B=ab. Joining it as BA would give the string abba which is not equal to string S. */
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      //  System.out.println("Hello, World!");
+     Scanner in = new Scanner(System.in);
+		int t=in.nextInt();
+		while(t>0){
+		    System.out.print("Number of characters in string");
+		    int n=in.nextInt();
+		    if(n%2==0){
+		       String s = in.next();
+		       if(n==s.length()){
+		          if(s.substring(0,n/2).equals(s.substring(n/2,n))){
+		              System.out.print("Yes");
+		          }
+		          else{
+		              System.out.print("No");
+		          }
+		           
+		       }
+		    }
+		    else{
+		        System.out.print("ODD LENGTH NOT ALLOWED");
+		    }
+		    t--;
+		}
+	    
+    }
+}
